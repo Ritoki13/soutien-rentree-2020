@@ -22,6 +22,7 @@ public class MatiereTest {
         assertEquals(e.getMessage(), "L'intitulé d'une matière ne peut être vide");
     }
 
+    /*
     @Disabled
     @Test
     public void test_matiere_name_getter_with_IHM() {
@@ -35,6 +36,7 @@ public class MatiereTest {
         Matiere testMatiere = new Matiere("POO", 3.5);
         assertEquals(3.5, testMatiere.getCoeff());
     }
+    */
 
 }
 
