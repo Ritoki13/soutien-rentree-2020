@@ -8,17 +8,17 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class MatiereTest {
 
-    @Disabled
+    // @Disabled
     @Test
     public void test_matiere_constructor_should_fail_with_null_name() {
-        Exception e = assertThrows(IllegalArgumentException.class, () -> { Matiere testMatiere = new Matiere(null, 3.0); });
+        Exception e = assertThrows(IllegalArgumentException.class, () -> { Matiere testMatiere = new Matiere(3.0, null); });
         assertEquals(e.getMessage(), "L'intitulé d'une matière ne peut être vide");
     }
 
-    @Disabled
+    // @Disabled
     @Test
     public void test_matiere_constructor_should_fail_with_empty_name() {
-        Exception e = assertThrows(IllegalArgumentException.class, () -> { Matiere testMatiere = new Matiere("", 3.0); });
+        Exception e = assertThrows(IllegalArgumentException.class, () -> { Matiere testMatiere = new Matiere(3.0,""); });
         assertEquals(e.getMessage(), "L'intitulé d'une matière ne peut être vide");
     }
 
